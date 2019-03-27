@@ -23,54 +23,27 @@
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
-    <Button
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        android:text="Inicio"
-        android:textColor="@color/colorPrimaryDark"
+
+    <EditText
+        android:hint="Escribe algo..."
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/edtxt"
         android:layout_below="@+id/tvpanel"
-        android:id="@+id/btnrootinicio"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#131313"
         />
 
     <Button
-        android:textAlignment="textStart"
+
         android:textSize="20dp"
-        android:text="Historial/Reasignacion"
+        android:text="IR A OTRO FRAGMENT"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/btnrootinicio"
-        android:id="@+id/btnroorag"
+        android:layout_below="@+id/edtxt"
+        android:id="@+id/btnirfrag"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#131313"
         />
-
-    <Button
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        android:text="Agregar"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/btnroorag"
-        android:id="@+id/btnrootadd"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#131313"
-        />
-
-    <Button
-        android:textAlignment="textStart"
-        android:textSize="20dp"
-        android:text="Grafica"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/btnrootadd"
-        android:id="@+id/btnrootgraf"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#131313"
-        />
-
 
 
 
