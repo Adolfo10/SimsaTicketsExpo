@@ -1,48 +1,37 @@
 package com.example.juankno4.simsaticket.cTec;
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.LinearLayout;
 
 import com.example.juankno4.simsaticket.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link fragment_sidebar.OnFragmentInteractionListener} interface
+ * {@link fragment_datos.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link fragment_sidebar#newInstance} factory method to
+ * Use the {@link fragment_datos#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_sidebar extends Fragment {
+public class fragment_datos extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    // android:drawableRight="@drawable/dia"
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    EditText text;
-    Button btn;
-    LinearLayout ly;
-
-
 
     private OnFragmentInteractionListener mListener;
 
-    public fragment_sidebar()
-    {
+    public fragment_datos() {
+        // Required empty public constructor
     }
 
     /**
@@ -51,11 +40,11 @@ public class fragment_sidebar extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_sidebar.
+     * @return A new instance of fragment fragment_datos.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_sidebar newInstance(String param1, String param2) {
-        fragment_sidebar fragment = new fragment_sidebar();
+    public static fragment_datos newInstance(String param1, String param2) {
+        fragment_datos fragment = new fragment_datos();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,20 +53,12 @@ public class fragment_sidebar extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null)
-        {
+        if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-    }
-
-    public interface Comunicador
-    {
-
     }
 
     @Override
@@ -85,41 +66,7 @@ public class fragment_sidebar extends Fragment {
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_sidebar, container, false);
-
-        switch (v.getId())
-        {
-            case R.id.btniz:
-                Intent intent = new Intent (v.getContext(), TecnicoInicioActivity.class);
-                startActivity(intent);
-                break;
-
-
-                case R.id.btnrootinicio:
-
-                    fragment_datos fd = new fragment_datos();
-
-
-                break;
-
-
-        }
-
-        /*v.findViewById(R.id.btniz).setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent = new Intent (v.getContext(), TecnicoInicioActivity.class);
-                startActivity(intent);
-            }
-        });*/
-
-
-
-
-
-        return v;
+        return inflater.inflate(R.layout.fragment_datos, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -132,11 +79,14 @@ public class fragment_sidebar extends Fragment {
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(Context context)
+    {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
+        if (context instanceof OnFragmentInteractionListener)
+        {
             mListener = (OnFragmentInteractionListener) context;
-        } else {
+        } else
+            {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.juankno4.simsaticket.R;
 
-public class TecnicoInicioActivity extends AppCompatActivity implements fragment_sidebar.IEnviarMensaje, fragment_sidebar.OnFragmentInteractionListener
+public class TecnicoInicioActivity extends AppCompatActivity implements fragment_sidebar.OnFragmentInteractionListener
 {
     LinearLayout ly;
     fragment_sidebar sideBar = new fragment_sidebar();
@@ -45,7 +45,7 @@ public class TecnicoInicioActivity extends AppCompatActivity implements fragment
     }
 
 
-    @Override
+    /*@Override
     public void enviarMensaje(String mensaje)
     {
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.contallfrag);
@@ -57,7 +57,7 @@ public class TecnicoInicioActivity extends AppCompatActivity implements fragment
         }
 
 
-    }
+    }*/
 
     @Override
     public void onFragmentInteraction(Uri uri) {

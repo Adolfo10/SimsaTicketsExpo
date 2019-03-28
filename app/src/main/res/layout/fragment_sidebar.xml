@@ -23,27 +23,29 @@
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
-
-    <EditText
-        android:hint="Escribe algo..."
-        android:background="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:id="@+id/edtxt"
-        android:layout_below="@+id/tvpanel"
-        />
-
     <Button
-
+        android:textAlignment="textStart"
         android:textSize="20dp"
-        android:text="IR A OTRO FRAGMENT"
+        android:text="ENVIAR A FRAGMENT"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/edtxt"
-        android:id="@+id/btnirfrag"
+        android:layout_below="@+id/tvpanel"
+        android:id="@+id/btnrootinicio"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#131313"
         />
+
+
+    <EditText
+        android:hint="Escribe lo que apetezcas"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/edtxt"
+        android:layout_below="@+id/btnrootinicio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        />
+
 
 
 
